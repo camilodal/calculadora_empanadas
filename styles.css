@@ -43,3 +43,9 @@ body {
     color: #333;
   }
   
+
+.turko-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px; /* Puedes ajustar el margen según sea necesario */
+}
