@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .container {
@@ -14,10 +14,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limitar el ancho del contenedor para una mejor legibilidad en dispositivos móviles */
+    width: 90%; /* Ajustar el ancho según sea necesario */
   }
   
   input {
-    width: 100%;
+    width: calc(100% - 16px);
     padding: 8px;
     margin-top: 8px;
     box-sizing: border-box;
@@ -31,6 +33,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   button:hover {
@@ -43,9 +47,9 @@ body {
     color: #333;
   }
   
-
-.turko-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px; /* Puedes ajustar el margen según sea necesario */
-}
+  .turko-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
