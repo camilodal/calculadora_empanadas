@@ -47,9 +47,12 @@ body {
     color: #333;
   }
   
-  .turko-image {
-    max-width: 100%;
-    height: auto;
+  .turko-container {
+    text-align: center;
     margin-top: 20px;
   }
   
+  .turko-image {
+    max-width: 100%;
+    height: auto;
+  }
