@@ -1,0 +1,19 @@
+<!-- practice.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prá</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Traducí la palabra</h1>
+    <p>{{ word }}</p>
+    <form action="/check" method="POST">
+        <input type="text" name="translation" placeholder="Enter translation">
+        <input type="hidden" name="correct_translation" value="{{ correct_translation }}">
+        <button type="submit">Chequear</button>
+    </form>    
+</body>
+</html>

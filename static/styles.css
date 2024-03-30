@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Alinea todo el contenido al centro */
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: green; /* Cambia el color del texto a verde */
+    font-size: 48px; /* Cambia el tamaño de la fuente a 24px */
+}
+
+.before-colon {
+    font-weight: bold;  /* por ejemplo */
+}
+
+.images-container {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.images-container img {
+    margin-right: 10px; /* Espacio entre las imágenes */
+    max-width: 50%;
+    vertical-align: middle; 
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

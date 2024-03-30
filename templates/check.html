@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chequeo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Chequeo</h1>
+    <p><span class="before-colon">Word:</span> {{ word }}</p>
+    <p><span class="before-colon">Your translation:</span> {{ request.form['translation'] }}</p>
+    <p><span class="before-colon">Correct translation:</span> {{ correct_translation }}</p>
+    {% if is_correct %}
+    <div class="images-container">
+        <img src="{{ url_for('static', filename='foto_correcto_1.jpg') }}" alt="Correcto 1">
+        <img src="{{ url_for('static', filename='foto_correcto_2.jpg') }}" alt="Correcto 2">
+    </div>
+    {% else %}
+        <img src="{{ url_for('static', filename='foto_incorrecto.jpg') }}" alt="Incorrecto">
+    {% endif %}
+    <p>{% if is_correct %}Correct!{% else %}Incorrect!{% endif %}</p>
+    <button onclick="window.location.href='/practice'">Next word </button>
+</body>
+</html>
